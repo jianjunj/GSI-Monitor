@@ -12,7 +12,7 @@ subroutine create_ctl_time(ntype,ftype,n_chan,iyy,imm,idd,ihh,idhh,&
   real,intent(in)                             :: rmiss
   character(26),intent(in)                    :: satname
   character(10),intent(in)                    :: satype
-  character(11),intent(in) :: dplat
+  character(11),intent(in)                    :: dplat
   integer,intent(in)                          :: nregion,little_endian
   character(40),dimension(nregion),intent(in) :: region
   real,dimension(nregion),intent(in)          :: rlonmin,rlonmax,rlatmin,rlatmax
@@ -30,7 +30,7 @@ subroutine create_ctl_time(ntype,ftype,n_chan,iyy,imm,idd,ihh,idhh,&
   character(80),dimension(nregion):: stringr
 
   integer iuse
-  integer j,i
+  integer i
   integer iyy2,imm2,idd2,ihh2,ntime
   integer,dimension(8):: ida,jda
 
